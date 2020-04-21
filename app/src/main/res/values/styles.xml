@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Tema Personalizado para remover tudo relacionado ao ToolBar-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Aqui inicio as Modificaçoes Universais para o Tema AppTheme.novo inserido no manifest-->
+
+    <style name="App_EditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/ColorText</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:background">@drawable/style_edittext</item>
+    </style>
+
+    <style name="App_Spinner" parent="@android:style/Widget.Spinner">
+        <item name="android:textColor">@color/ColorText</item>
+        <item name="android:background">@drawable/style_spinner</item>
+    </style>
+
+    <style name="App_SpinnerDrop" parent="@android:style/Widget.Spinner.DropDown">
+
+        <!--<item name="android:background">@drawable/ic_arrow_drop_down</item>-->
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:gravity">start|center_vertical</item>
+    </style>
+
+    <!--tema AppTheme.novo criado a partir do AppTheme-->
+    <!--Acima eu defino o tema para um item especifico , e a baixo eu chamo este tema para aplicar universalmente-->
+    <style name="AppTheme.novo" parent="AppTheme">
+        <item name="editTextStyle">@style/App_EditTextStyle</item>
+        <item name="android:spinnerStyle">@style/App_Spinner</item>
+        <item name="android:dropDownSpinnerStyle">@style/App_SpinnerDrop</item>
+    </style>
+
+</resources>

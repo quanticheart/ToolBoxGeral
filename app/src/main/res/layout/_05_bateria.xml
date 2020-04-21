@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d5ebfa"
+    android:padding="16dp"
+    tools:context="._05_Bateria.Carga_Bateria">
+
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv_carregando"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:progressDrawable="@drawable/_05_shape_bateria" />
+
+    <TextView
+        android:id="@+id/tv_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_carregando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_tipo_carga"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="@string/app_name"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_tipo_carga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_carregando"
+        android:layout_below="@+id/tv_info"
+        android:layout_marginTop="27dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_tela_ligada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_carregando"
+        android:layout_below="@+id/pb"
+        android:layout_marginTop="29dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="20dp" />
+
+    <Chronometer
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tela_ligada"
+        android:layout_centerHorizontal="true"
+        android:text="00:00" />
+
+    <TextView
+        android:id="@+id/tv_tela_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_tela_ligada"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_tela_wifi_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_tela_wifi"
+        android:layout_below="@+id/tv_tela_wifi"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_tela_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_tela_wifi_tipo"
+        android:layout_below="@+id/tv_tela_wifi_tipo"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="20dp" />
+
+
+
+
+</RelativeLayout>

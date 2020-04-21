@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_politica_privacidade_voltar_login"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent" />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="Política de Privacidade"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <ScrollView
+            android:id="@+id/scrollPolitica"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                android:gravity="fill_horizontal"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16dp" />
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+

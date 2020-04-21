@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rl_pai">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abrir CropView?"/>
+            <Switch
+                android:id="@+id/sw_abre_cropview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:paddingTop="15dp"
+                android:id="@+id/crop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CropView"/>
+
+            <Button
+                android:visibility="gone"
+                android:paddingTop="15dp"
+                android:id="@+id/crop2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crop 2"/>
+
+            <Button
+                android:paddingTop="15dp"
+                android:id="@+id/btn_modal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chamar Modal"/>
+
+
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@mipmap/ic_launcher"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

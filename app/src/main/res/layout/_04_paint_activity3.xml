@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.lht.paintview.PaintView
+        android:id="@+id/view_paint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="@color/Color_Palet_Flat_WET_ASPHALT"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_arrow_left"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="18">
+
+        <HorizontalScrollView
+            android:overScrollMode="never"
+            android:id="@+id/tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/seletor_de_background"
+                    android:src="@drawable/ic_brush"
+                    android:text="FIT IMAGE" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/seletor_de_background"
+                    android:src="@drawable/ic_palet_white"
+                    android:text="FIT IMAGE" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/seletor_de_background"
+                    android:src="@drawable/ic_add_a_photo_white"
+                    android:text="FIT IMAGE" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/seletor_de_background"
+                    android:src="@drawable/ic_collections_white"
+                    android:text="FIT IMAGE" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/seletor_de_background"
+                    android:src="@drawable/seletor_de_icone_white"
+                    android:text="FIT IMAGE" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/seletor_de_background"
+                    android:src="@drawable/ic_save_white"
+                    android:text="FIT IMAGE" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/seletor_de_background"
+                    android:src="@drawable/ic_settings_white"
+                    android:text="FIT IMAGE" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/seletor_de_background"
+                    android:src="@drawable/ic_share"
+                    android:text="FIT IMAGE" />
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_arrow_right"/>
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/linearLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent">-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/btn_color"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/seletor_de_background"-->
+    <!--android:src="@drawable/paintview_ic_circle_red" />-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/btn_stroke"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/seletor_de_background"-->
+    <!--android:src="@drawable/ic_edit" />-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/btn_undo"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/seletor_de_background"-->
+    <!--android:src="@drawable/_04_seletor_de_icone" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="196dp"-->
+    <!--android:layout_marginBottom="50dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintVertical_bias="0.863"-->
+    <!--tools:ignore="MissingConstraints">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_paintview_colors"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/colorPrimaryDark"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone">-->
+
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/ll_paintview_colors_red"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/seletor_de_background"-->
+    <!--android:src="@drawable/paintview_ic_circle_red" />-->
+
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/ll_paintview_colors_blue"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/seletor_de_background"-->
+    <!--android:src="@drawable/paintview_ic_circle_blue" />-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/ll_paintview_colors_green"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/seletor_de_background"-->
+    <!--android:src="@drawable/paintview_ic_circle_green" />-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/ll_paintview_colors_yellow"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/seletor_de_background"-->
+    <!--android:src="@drawable/paintview_ic_circle_yellow" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_paintview_brush"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/colorPrimaryDark"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone">-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/ll_paintview_brush_lapis"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/seletor_de_background"-->
+    <!--android:src="@drawable/ic_edit" />-->
+
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/ll_paintview_brush_pincel"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/seletor_de_background"-->
+    <!--android:src="@drawable/ic_brush"/>-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/ll_paintview_brush_rolo"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/seletor_de_background"-->
+    <!--android:src="@drawable/ic_format_paint"/>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1">-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1">-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.john.toolbox"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.10"
+        multiDexEnabled = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    def supportLibVersion = '26.1.0'
+    implementation "com.android.support:appcompat-v7:${supportLibVersion}"
+    implementation "com.android.support:support-v4:${supportLibVersion}"
+    implementation "com.android.support:design:${supportLibVersion}"
+    implementation "com.android.support:cardview-v7:${supportLibVersion}"
+    implementation "com.android.support:recyclerview-v7:${supportLibVersion}"
+
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    implementation 'com.lht:paintview:1.17'
+    implementation 'com.github.faranjit:currency-edittext:1.0.1'
+    implementation 'com.uncopt:android.justified:1.0'
+
+    //_03_Cam_e_Sd
+    implementation 'com.isseiaoki:simplecropview:1.1.7'
+    implementation 'com.steelkiwi:cropiwa:1.0.3'
+
+    //_06_RecyclerView
+//    compile 'com.android.support:appcompat-v7:23.3.0'
+//    compile 'com.android.support:design:23.3.0'
+
+//
+//    _07_ carregamento de imagens
+
+    //Glide_
+    implementation ('com.github.bumptech.glide:glide:4.6.1'){
+        exclude group: "com.android.support"
+        // aqui excluo o supote a bilbioteca suport , pois a ultima vesão do glide
+        // usa a api 27 para video decoder , entao caso não va utilizar , nao inporto
+        // para nao ter comflito com a suport library usada neste projeto
+    }
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+
+}

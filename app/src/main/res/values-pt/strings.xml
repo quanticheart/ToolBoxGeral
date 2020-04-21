@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- nome do app -->
+    <string name="app_name">ToolBox</string>
+
+    <!-- Globais do Sistema-->
+    <string name="msg_global_sem_conexao">Sem conexão com à Internet</string>
+    <string name="msg_global_title_share">Compartilhar</string>
+    <string name="msg_global_campo_obrigatorio">Este Campo Precisa ser Preenchido</string>
+
+</resources>

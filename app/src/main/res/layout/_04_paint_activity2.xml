@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_pai"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <!--app:elevation="0dp"-->
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_inicio"
+            app:titleTextColor="@color/ColorSupremeWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.lht.paintview.PaintView
+        android:id="@+id/view_paint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_color"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/seletor_de_background"
+            android:src="@drawable/paintview_ic_circle_red" />
+
+        <ImageButton
+            android:id="@+id/btn_stroke"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/seletor_de_background"
+            android:src="@drawable/ic_edit" />
+
+        <ImageButton
+            android:id="@+id/btn_undo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/seletor_de_background"
+            android:src="@drawable/_04_seletor_de_icone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.863"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/ll_paintview_colors"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <ImageButton
+                android:id="@+id/ll_paintview_colors_red"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/seletor_de_background"
+                android:src="@drawable/paintview_ic_circle_red" />
+
+
+            <ImageButton
+                android:id="@+id/ll_paintview_colors_blue"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/seletor_de_background"
+                android:src="@drawable/paintview_ic_circle_blue" />
+
+            <ImageButton
+                android:id="@+id/ll_paintview_colors_green"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/seletor_de_background"
+                android:src="@drawable/paintview_ic_circle_green" />
+
+            <ImageButton
+                android:id="@+id/ll_paintview_colors_yellow"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/seletor_de_background"
+                android:src="@drawable/paintview_ic_circle_yellow" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_paintview_brush"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/ll_paintview_brush_lapis"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/seletor_de_background"
+                android:src="@drawable/ic_edit" />
+
+
+            <ImageButton
+                android:id="@+id/ll_paintview_brush_pincel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/seletor_de_background"
+                android:src="@drawable/ic_brush"/>
+
+            <ImageButton
+                android:id="@+id/ll_paintview_brush_rolo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/seletor_de_background"
+                android:src="@drawable/ic_format_paint"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

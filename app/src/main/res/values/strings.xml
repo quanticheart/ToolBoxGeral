@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- nome do app -->
+    <string name="app_name">ToolBox</string>
+
+    <!-- BottonNavigationView-->
+    <string name="bnv_inicio">Inicio</string>
+    <string name="bnv_categorias">Categorias</string>
+    <string name="bnv_favoritos">Favoritos</string>
+    <string name="bnv_perfil">Perfil</string>
+
+    <!-- Globais do Sistema-->
+    <string name="msg_global_sem_conexao">No Internet Connection</string>
+    <string name="msg_global_title_share">Share To</string>
+    <string name="msg_global_campo_obrigatorio">field is required</string>
+
+</resources>

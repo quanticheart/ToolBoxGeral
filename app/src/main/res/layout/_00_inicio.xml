@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rl_pai">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_pai"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <!--app:elevation="0dp"-->
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_inicio"
+            app:titleTextColor="@color/ColorSupremeWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp"
+            android:orientation="vertical">
+
+            <Button
+                android:paddingTop="15dp"
+                android:id="@+id/btn_cam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Camera SD e CropView"/>
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:id="@+id/btn_paintview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PaintView"/>
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:id="@+id/btn_carga_bateria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carga de Bateeria"/>
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:id="@+id/btn_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RecyclerView"/>
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:id="@+id/btn_imgs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Glide e Picasso"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
